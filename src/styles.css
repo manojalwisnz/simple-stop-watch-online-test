@@ -1,0 +1,84 @@
+:root {
+  --brand-white: #ffffff;
+  --brand-black: #000000;
+  --primary-color: #0a6dff;
+  --primary-color-light: #0a6dff;
+  --button-color: var(--primary-color);
+  --button-color-hover: #0963e8;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url("assets/fonts/Sequel100Wide-85.ttf") format("truetype");
+  font-style: bold;
+}
+
+* {
+  font-family: Archivo;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("/assets/Background.png") #0a6dff no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 100%;
+  font-family: Archivo;
+}
+
+code {
+  background-color: #eff6fc;
+}
+
+.AppWrapper {
+  padding: 5%;
+}
+
+.App {
+  background-color: #f3f3f7;
+  opacity: 0.97;
+  font-family: sans-serif;
+  border-radius: 4px;
+  padding: 5%;
+  line-height: 1.5rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+}
+
+.instructions-header {
+  display: flex;
+  flex-direction: row;
+  height: 58px;
+}
+
+button {
+  border: 0;
+  background-color: var(--button-color);
+  border-radius: 50px;
+  color: var(--brand-white);
+  padding: 5px 32px;
+  height: 32px;
+  margin-left: 32px;
+  margin-top: 14px;
+}
+
+button:hover {
+  background-color: var(--button-color-hover);
+}
+
+h1 {
+  font-family: "Sequel", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: var(--brand-white);
+  line-height: normal;
+}
+
+h2 {
+  color: var(--brand-white);
+  font-weight: 400;
+}
